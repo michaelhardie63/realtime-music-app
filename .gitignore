@@ -1,0 +1,38 @@
+# dependencies
+node_modules/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# builds & caches
+dist/
+build/
+.out/
+.next/
+.nuxt/
+.svelte-kit/
+.storybook-out/
+coverage/
+.cache/
+.parcel-cache/
+.vite/
+.vercel/
+.netlify/
+
+# env & local
+.env
+.env.*.local
+!.env.example
+.DS_Store
+
+# editors/OS
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+Thumbs.db
+
+# misc
+tmp/

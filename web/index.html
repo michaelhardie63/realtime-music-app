@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jamstik Visualiser (Config Starter)</title>
+  <style>
+  html, body, canvas { margin:0; padding:0; width:100%; height:100%; background:#000; }
+  #hud { position:fixed; top:10px; left:10px; color:#fff; font:12px ui-monospace, Menlo, monospace;
+         background: rgba(0,0,0,.35); padding:8px 10px; border-radius:6px; z-index:10; }
+  #sceneList button { margin-right:6px; margin-top:6px; }
+</style>
+
+  </style>
+</head>
+<body>
+  <div id="stage">
+  <canvas id="glA" width="1280" height="720" style="position:absolute; top:0; left:0;"></canvas>
+  <canvas id="glB" width="1280" height="720" style="position:absolute; top:0; left:0; opacity:0;"></canvas>
+</div>
+  <div id="hud">
+    <div>WS: <span id="wsState">connecting…</span></div>
+    <div>Scene: <b id="scene">neon-grid</b> | BPM: <b id="bpm">120</b></div>
+    <div>Note: <b id="note">-</b> Vel: <b id="vel">-</b> Bend: <b id="bend">-</b></div>
+    <div>Config: <b id="cfg">none</b></div>
+    <div id="sceneList"></div>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
